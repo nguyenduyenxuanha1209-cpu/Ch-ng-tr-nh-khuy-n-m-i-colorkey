@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIÊU SALE COLORKEY – MUA HỜI NHƯ CHƠI</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+
+      background: radial-gradient(circle at 30% 30%, #d0c8f7 0%, #9ca4f7 40%, #7a8bf7 70%, #503d9f 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), rgba(0,0,0,0.3));
+      z-index: 1;
+    }
+
+    #home {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      z-index: 2;
+    }
+    .home-info {
+      max-width: 600px;
+      background: rgba(0,0,0,0.3);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .countdown li {
+      list-style: none;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px 20px;
+      border-radius: 10px;
+      min-width: 70px;
+    }
+    .countdown span {
+      display: block;
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 2px;
+    }
+    .countdown h3 {
+      font-size: 0.85rem;
+      margin: 0;
+      font-weight: 500;
+      color: #ddd;
+    }
+
+    .subscribe-form form {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .subscribe-form input[type="email"] {
+      padding: 12px 15px;
+      border-radius: 30px;
+      border: none;
+      width: 250px;
+      font-size: 1rem;
+      outline: none;
+      font-weight: 600;
+    }
+    .subscribe-form button {
+      padding: 12px 20px;
+      background: #7a8bf7;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      color: white;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+    .subscribe-form button:hover {
+      background: #5c66e0;
+    }
+
+    /* Thêm phần gallery ảnh */
+    .product-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto 50px auto;
+      z-index: 2;
+    }
+    .product-gallery img {
+      max-width: 280px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .product-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <section id="home">
+    <div class="home-info">
+      <h1>SIÊU SALE COLORKEY – MUA HỜI NHƯ CHƠI</h1>
+      <p>Chương trình ưu đãi đặc biệt từ Colorkey với hàng loạt sản phẩm makeup hot trend, giảm giá lên đến 70%! Bắt đầu từ 30/08/2025 – Số lượng có hạn!</p>
+
+      <ul class="countdown">
+        <li><span id="days">00</span><h3>Ngày</h3></li>
+        <li><span id="hours">00</span><h3>Giờ</h3></li>
+        <li><span id="minutes">00</span><h3>Phút</h3></li>
+        <li><span id="seconds">00</span><h3>Giây</h3></li>
+      </ul>
+      <div class="subscribe-form">
+        <form action="#" method="get" onsubmit="alert('Cảm ơn bạn đã đăng ký!'); return false;">
+          <input type="email" name="email" placeholder="Nhập email để nhận ưu đãi!" required />
+          <button type="submit" title="Đăng ký"><i>&#9993;</i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Thêm gallery ảnh sản phẩm -->
+    <div class="product-gallery">
+      <img src="https://i0.wp.com/beaudy.vn/wp-content/uploads/2023/06/bang-mau-son-colorkey-son-hinh-kem-dai-1-d63c39e5.jpg?resize=749%2C749&ssl=1" alt="Bảng màu son Colorkey" />
+      <img src="https://thfvnext.bing.com/th/id/OIP.0CZaCi0Q0N0Qd8u7kDzo1AHaCx?w=325&h=131&c=7&r=0&o=7&cb=thfvnext&pid=1.7&rm=3" alt="Sản phẩm Colorkey 1" />
+      <img src="https://thfvnext.bing.com/th/id/OIP.0m4-UBGtKJgXvbxwTq5tjwHaCx?w=324&h=131&c=7&r=0&o=7&cb=thfvnext&pid=1.7&rm=3" alt="Sản phẩm Colorkey 2" />
+    </div>
+  </section>
+
+  <script>
+    const eventDate = new Date('2025-08-30T00:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }
+    updateCountdown();
+    const timerInterval = setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
